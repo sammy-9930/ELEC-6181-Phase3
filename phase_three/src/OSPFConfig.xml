@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<OSPFASConfig>
+  <Area id="0.0.0.0">
+    <!-- Let the Ipv4NetworkConfigurator handle subnetting automatically -->
+  </Area>
+  <Router name="**" RFC1583Compatible="true">
+    <BroadcastInterface ifName='eth[*]' areaID='0.0.0.0' interfaceOutputCost='1' />
+    <PointToPointInterface ifName='ppp[*]' areaID='0.0.0.0' interfaceOutputCost='1' />
+  </Router>
+</OSPFASConfig>
